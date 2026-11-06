@@ -30,13 +30,13 @@ function productCard(p) {
       <p class="p-desc">${p.desc}</p>
       <div class="p-meta">
         <div class="sizes" aria-label="Available sizes">${p.sizes.map((s) => `<span>${s}</span>`).join('')}</div>
-        <div class="colors" aria-label="Colours">${p.colors.map((c) => `<i style="background:${c}"></i>`).join('')}</div>
       </div>
       <a class="btn btn-wa" href="${waLink(msg)}" target="_blank" rel="noopener">
         <svg class="ic"><use href="#i-wa"/></svg> Order on WhatsApp
       </a>
     </div>
   </article>`;
+  // <div class="colors" aria-label="Colours">${p.colors.map((c) => `<i style="background:${c}"></i>`).join('')}</div>
 }
 
 /* ---------- Image fallbacks ---------- */
